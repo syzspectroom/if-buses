@@ -1,0 +1,22 @@
+{
+  "name": "if buses",
+  "version": "0.0.0",
+  "homepage": "https://github.com/syzspectroom/if-buses",
+  "authors": [
+    "Victor Rubych <syzspectroom@gmail.com>"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "leaflet": "~0.7.3"
+  }
+}
