@@ -8,15 +8,19 @@ class Routes
   getNameById: (id) ->
     @getById(id).name
 
+  getShortNameById: (id) ->
+    @getById(id).shortName
+
   getFillColorById: (id)->
     rgba2hex @getById(id).fillColor
 
   getOutLineColorById: (id)->
     rgba2hex @getById(id).outLineColor
 
-  parseData: (routesInfo) ->
-    for route in routesInfo.values
+  parseData: (routesData) ->
+    for route in routesData.values
       @data[route.id] =
+        id: route.id
         name: route.name
         shortName: route.shortName
         fillColor: route.fillColor
@@ -25,7 +29,7 @@ class Routes
 
 module.exports = Routes
 
- 
+
 rgba2hex = (rgba) ->
   colors = rgba.split(',')
   componentToHex = (c) ->

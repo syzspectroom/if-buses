@@ -1,3 +1,32 @@
 @import 'components/components';
 
 #map { min-height: 700px; }
+#controls {
+  background-color: rgba(68, 68, 68, 0.9);
+  color: #fff;
+  max-width: 96%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 317px;
+  z-index: 1000;
+  height: 100%;
+  overflow: scroll;
+
+  a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    font-size: 0.9em;
+    line-height: 1em;
+    padding: 20px 0 0 10px;
+    height: 50px;
+    // margin: 0 10px;
+    border-bottom: 1px solid rgba(255,255,255, 0.5);
+    &.active {
+      background: rgba(120, 120, 120, 0.9);
+    }
+  }
+
+}
